@@ -1,4 +1,4 @@
-FROM docker.io/debian:13 AS build
+FROM docker.io/debian:trixie-20260610 AS build
 
 ARG PYTHON_3_12_VERSION=3.12.13
 ARG PYTHON_3_13_VERSION=3.13.13
