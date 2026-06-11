@@ -17,7 +17,7 @@ ghcr.io/cpressland/oci-python:latest
 Copy the Python runtimes into your devcontainer image:
 
 ```dockerfile
-COPY --from=ghcr.io/cpressland/oci-python:latest / /usr
+COPY --from=ghcr.io/cpressland/oci-python:latest / /
 ```
 
 ## Version updates

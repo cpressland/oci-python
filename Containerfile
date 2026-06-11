@@ -26,4 +26,4 @@ RUN uv tool install --python=3.13 aws-sam-cli && \
     uv tool install --python=3.13 pre-commit
 
 FROM scratch
-COPY --from=build /python /
+COPY --from=build /python /usr
