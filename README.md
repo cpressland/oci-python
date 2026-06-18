@@ -9,7 +9,7 @@ The `Containerfile` uses uv to install pinned releases of Python 3.12, 3.13, and
 The image is built for `linux/amd64` and `linux/arm64` via GitHub Actions and published to the GitHub Container Registry at:
 
 ```
-ghcr.io/cpressland/oci-python:latest
+ghcr.io/thredd-platform/oci-python:latest
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ ghcr.io/cpressland/oci-python:latest
 Copy the Python runtimes into your devcontainer image:
 
 ```dockerfile
-COPY --from=ghcr.io/cpressland/oci-python:latest / /
+COPY --from=ghcr.io/thredd-platform/oci-python:latest / /
 ```
 
 ## Version updates
