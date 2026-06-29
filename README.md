@@ -1,6 +1,6 @@
 # oci-python
 
-A minimal OCI image that packages Python 3.12, 3.13, and 3.14 (via [uv](https://github.com/astral-sh/uv)) for use in devcontainer builds.
+A minimal OCI image that packages Python 3.11, 3.12, 3.13, and 3.14 (via [uv](https://github.com/astral-sh/uv)) for use in devcontainer builds.
 
 ## What it does
 

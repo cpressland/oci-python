@@ -5,6 +5,16 @@
     {
       "customType": "regex",
       "fileMatch": ["^Containerfile$"],
+      "matchStrings": ["ARG PYTHON_3_11_VERSION=(?<currentValue>[\\d.]+)"],
+      "depNameTemplate": "python-3.11",
+      "datasourceTemplate": "github-tags",
+      "packageNameTemplate": "python/cpython",
+      "extractVersionTemplate": "^v(?<version>.*)$",
+      "versioningTemplate": "semver"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^Containerfile$"],
       "matchStrings": ["ARG PYTHON_3_12_VERSION=(?<currentValue>[\\d.]+)"],
       "depNameTemplate": "python-3.12",
       "datasourceTemplate": "github-tags",
@@ -37,6 +47,10 @@
     {
       "matchDepNames": ["debian"],
       "enabled": false
+    },
+    {
+      "matchDepNames": ["python-3.11"],
+      "allowedVersions": ">=3.11.0 <3.12.0"
     },
     {
       "matchDepNames": ["python-3.12"],
